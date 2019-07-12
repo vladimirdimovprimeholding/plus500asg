@@ -42,8 +42,10 @@ class MyItemRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
-        holder.mIdView.text = item.id
-        holder.mContentView.text = item.content
+        holder.mPairView.text = item.pair
+        holder.mFirstDigitsView.text = item.firstDigits
+        holder.mSecondDigitsView.text = item.secondDigits
+        holder.mPercentageView.text = item.precentage
 
         with(holder.mView) {
             tag = item
@@ -54,11 +56,9 @@ class MyItemRecyclerViewAdapter(
     override fun getItemCount(): Int = mValues.size
 
     inner class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
-        val mIdView: TextView = mView.item_number
-        val mContentView: TextView = mView.content
-
-        override fun toString(): String {
-            return super.toString() + " '" + mContentView.text + "'"
-        }
+        val mPairView: TextView = mView.pair
+        val mFirstDigitsView: TextView = mView.first_digits
+        val mSecondDigitsView: TextView = mView.second_digits
+        val mPercentageView: TextView = mView.precentage
     }
 }

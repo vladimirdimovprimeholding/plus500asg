@@ -87,6 +87,18 @@
         <item name="android:layout_marginEnd">@dimen/buysell_side_margins</item>
     </style>
 
+    <style name="BuySellEditText">
+        <item name="android:ems">4</item>
+        <item name="android:text">@string/buysell_edittext_placeholder</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:textColor">@color/colorGreyDark</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_marginStart">@dimen/buysell_side_margins</item>
+        <item name="android:layout_marginEnd">@dimen/buysell_side_margins</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
     <style name="BuySellPlusMinusButton" parent="DefaultButton">
         <item name="android:layout_marginEnd">@dimen/buysell_side_margins</item>
     </style>
@@ -99,7 +111,10 @@
     <style name="BuySellRadioButton" parent="DefaultRadioButton">
         <!-- leave this for future customizations -->
     </style>
+
     <!-- List -->
-    
+    <style name="ItemButton" parent="DefaultButton">
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
     
 </resources>

@@ -23,6 +23,35 @@ object DummyContent {
 
     private val COUNT = 25
 
+    val somePairs = arrayOf("EUR/GBP", "USD/CAD", "EUR/USD", "BTC/USD(Kraken)", "Gold", "Silver", "CAD/USD")
+    val someDigits = arrayOf(
+        "9084503280",
+        "74.53647434",
+        "6.7705854",
+        "0.869701",
+        "40.360352",
+        "5.626102279",
+        "0.97655754",
+        "248.65409",
+        "84.9209681",
+        "98.7143725",
+        "6.1092235",
+        "0.76232",
+        "16.0088410",
+        "96.2872",
+        "28.474040")
+    val somePrecentages = arrayOf(
+        "0.07",
+        "-7.77",
+        "6.07",
+        "6.38",
+        "-4.9",
+        "0.34",
+        "9.91",
+        "-2.74",
+        "8.89",
+        "-3.05"
+    )
     init {
         // Add some sample items.
         for (i in 1..COUNT) {
@@ -36,14 +65,15 @@ object DummyContent {
 
     private fun addItem(item: DummyItem) {
         ITEMS.add(item)
-        ITEM_MAP.put(item.id, item)
+//        ITEM_MAP.put(item.id, item)
     }
 
     private fun createDummyItem(position: Int): DummyItem {
         return DummyItem(
-            position.toString(),
-            "Item " + position,
-            makeDetails(position)
+            somePairs.random(),
+            someDigits.random(),
+            somePrecentages.random(),
+            someDigits.random()
         )
     }
 
@@ -59,7 +89,7 @@ object DummyContent {
     /**
      * A dummy item representing a piece of content.
      */
-    data class DummyItem(val id: String, val content: String, val details: String) {
-        override fun toString(): String = content
+    data class DummyItem(val pair: String, val firstDigits: String, val precentage: String, val secondDigits: String) {
+
     }
 }
