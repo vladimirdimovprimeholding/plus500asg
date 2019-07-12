@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Design -->
+    <style name="DefaultButton">
+        <item name="android:background">@drawable/bg_button_border</item>
+    </style>
+    
+    <style name="DefaultRadioButton">
+        <item name="android:colorControlNormal">@color/colorGreyDark</item>
+        <item name="android:colorControlActivated">@color/colorBlue</item>
+    </style>
+    
+    <style name="DefaultTitleText">
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="DefaultSubTitleText">
+        <item name="android:textSize">@dimen/sub_title_text_size</item>
+    </style>
+
+    <style name="DefaultRegularText">
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    <style name="DefaultImage">
+        <item name="android:contentDescription">@string/default_content_description</item>
+    </style>
+
+    <!-- Pop Up -->
+
+    <style name="PopUpImage" parent="DefaultImage">
+        <item name="android:src">@drawable/ic_pro</item>
+        <item name="android:layout_marginTop">@dimen/popup_top_margins</item>
+        <item name="android:layout_marginStart">@dimen/popup_side_margins</item>
+    </style>
+
+    <style name="PopUpTitle" parent="DefaultTitleText">
+        <item name="android:text">@string/popup_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/popup_top_margins</item>
+        <item name="android:layout_marginStart">@dimen/popup_side_margins</item>
+        <item name="android:layout_marginEnd">@dimen/popup_side_margins</item>
+    </style>
+
+    <style name="PopUpMessage" parent="DefaultRegularText">
+        <item name="android:text">@string/popup_message</item>
+        <item name="android:textColor">@color/colorGreyDark</item>
+        <item name="android:layout_marginStart">@dimen/popup_side_margins</item>
+        <item name="android:layout_marginEnd">@dimen/popup_side_margins</item>
+    </style>
+
+    <style name="PopUpShadow">
+        <item name="android:layout_marginTop">@dimen/popup_top_margins</item>
+        <item name="android:background">@drawable/bg_shadow</item>
+    </style>
+    
+    <!-- Buy/Sell -->
+    <style name="BuySellAlertText" parent="DefaultSubTitleText">
+        <item name="android:text">@string/buysell_alert_title</item>
+        <item name="android:layout_marginTop">@dimen/buysell_top_margins</item>
+        <item name="android:layout_marginStart">@dimen/buysell_side_margins</item>
+        <item name="android:layout_marginEnd">@dimen/buysell_side_margins</item>
+    </style>
+    
+    <style name="BuySellRegularText" parent="DefaultRegularText">
+        <!-- leave this for future customizations -->
+    </style>
+
+    <style name="BuySellGrayText" parent="DefaultRegularText">
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+
+    <style name="BuySellButton" parent="DefaultButton">
+        <!-- leave this for future customizations -->
+    </style>
+    <!-- List -->
+    
+    
+</resources>

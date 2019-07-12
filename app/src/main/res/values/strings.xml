@@ -1,0 +1,39 @@
+<resources>
+    <!-- System -->
+    <string name="app_name">Plus500asg</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="default_content_description">defaultContentDescription</string>
+
+    <!-- Main -->
+    <string name="main_buy_sell">Buy/Sell</string>
+    <string name="main_list">List</string>
+
+    <!-- Buy/Sell -->
+    <string name="buysell_alert_title">Alert me when price reaches</string>
+    <string name="buysell_edittext_placeholder">0.90100</string>
+    <string name="buysell_above_text">1.00% above current price</string>
+    <string name="buysell_current_rate_text">Current buy rate 0.89206</string>
+    <string name="buysell_price_type">Price type</string>
+    <string name="buysell_delivery_methods">Delivery methods</string>
+    <string name="buysell_by_email">By email</string>
+    <string name="buysell_by_sms">By SMS</string>
+    <string name="buysell_push">Push</string>
+    <string name="buysell_confirm_button">Apply Now</string>
+    <string name="buysell_cancel_button">Not Now</string>
+
+    <!-- Pop up -->
+    <string name="popup_title">Professional Account Offer</string>
+    <string name="popup_message">Apply for Plus500\'s Professional Client Account to be able to trade with a maximum
+        leverage of up to 1:300.
+    </string>
+
+    <!-- Other -->
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="precent">%</string>
+
+    <!-- Design -->
+    <string name="sell">Sell</string>
+    <string name="buy">Buy</string>
+
+</resources>
