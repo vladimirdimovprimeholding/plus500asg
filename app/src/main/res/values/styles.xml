@@ -127,5 +127,12 @@
         <item name="android:layout_marginBottom">@dimen/list_bottom_margins</item>
         <!-- leave this for future customizations -->
     </style>
+
+    <style name="ListInfoButton" parent="DefaultImage">
+        <item name="android:src">@drawable/ic_info</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@null</item>
+    </style>
     
 </resources>

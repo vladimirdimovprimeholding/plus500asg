@@ -21,8 +21,11 @@
     <dimen name="buysell_edittext_height">40dp</dimen>
 
     <!-- List -->
+    <dimen name="list_item_padding">8dp</dimen>
+    <dimen name="list_item_button_height">30dp</dimen>
     <dimen name="list_top_margins">8dp</dimen>
     <dimen name="list_bottom_margins">8dp</dimen>
     <dimen name="list_side_margins">8dp</dimen>
+    <dimen name="list_image_size">23dp</dimen>
 
 </resources>

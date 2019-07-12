@@ -4,8 +4,9 @@
               android:layout_height="wrap_content"
               android:orientation="horizontal"
               android:background="@color/colorWhite"
-              android:padding="8dp">
+              android:padding="@dimen/list_item_padding">
 
+    <!-- First column container -->
     <LinearLayout
             android:layout_weight="1"
             android:orientation="vertical"
@@ -15,7 +16,7 @@
                 android:id="@+id/pair"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="ListPairText"
+                style="@style/ListPairText"
                 android:text="EUR/GBP"/>
 
         <LinearLayout
@@ -24,7 +25,7 @@
                 android:orientation="horizontal">
             <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/list_item_button_height"
                     style="@style/ListItemButton"
                     android:text="@string/sell"/>
 
@@ -33,9 +34,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0.4324234"
-                    style="ListDigitsText"/>
+                    style="@style/ListDigitsText"/>
         </LinearLayout>
     </LinearLayout>
+
+    <!-- Second column container-->
     <LinearLayout
             android:layout_weight="1"
             android:orientation="vertical"
@@ -46,14 +49,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0.15%"
-                style="ListDigitsText"/>
+                style="@style/ListDigitsText"/>
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
             <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/list_item_button_height"
                     style="@style/ListItemButton"
                     android:text="@string/buy"/>
 
@@ -62,16 +65,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0.243343"
-                    style="ListDigitsText"/>
+                    style="@style/ListDigitsText"/>
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Third column (Info button)-->
     <ImageButton
-            android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/list_image_size"
+            android:layout_height="@dimen/list_image_size"
             android:layout_weight="0"
-            android:background="@null"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_info"/>
+            style="@style/ListInfoButton"/>
 </LinearLayout>

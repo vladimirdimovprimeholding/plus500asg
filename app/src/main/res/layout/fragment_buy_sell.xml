@@ -15,6 +15,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView"/>
 
+    <!-- Alert price container -->
     <LinearLayout
             android:id="@+id/linearLayout"
             android:orientation="horizontal"
@@ -27,15 +28,20 @@
             android:layout_marginEnd="8dp"
             android:layout_marginTop="16dp">
 
+        <!-- Price edit text-->
         <EditText
                 style="@style/BuySellEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/buysell_edittext_height"/>
+
+        <!-- Plus button -->
         <Button
                 android:text="@string/plus"
                 android:layout_width="@dimen/buysell_plus_minus_button_width"
                 android:layout_height="@dimen/buysell_plus_minus_button_height"
                 style="@style/BuySellPlusMinusButton"/>
+
+        <!-- Minus button-->
         <Button
                 android:text="@string/minus"
                 android:layout_width="@dimen/buysell_plus_minus_button_width"
@@ -85,10 +91,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
+        <!-- Price type radio group -->
         <RadioGroup
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <!-- Sell button -->
             <RadioButton
                     style="@style/BuySellRadioButton"
@@ -120,11 +128,13 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp">
 
+        <!-- Delivery methods label -->
         <TextView
                 android:text="@string/buysell_delivery_methods"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/textView8" android:layout_weight="1"/>
 
+        <!-- Options button-->
         <ImageButton
                 android:background="@null"
                 android:layout_gravity="end"
@@ -133,6 +143,7 @@
                 android:layout_height="wrap_content" android:id="@+id/imageView" android:layout_weight="0"/>
     </LinearLayout>
 
+    <!-- Methods container -->
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
@@ -174,6 +185,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/linearLayout4">
 
+        <!-- Confirm button -->
         <Button
                 style="@style/BuySellConfirmCancelButton"
                 android:text="@string/buysell_confirm_button"
@@ -182,6 +194,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_weight="1"/>
 
+        <!-- Cancel button -->
         <Button
                 style="@style/BuySellConfirmCancelButton"
                 android:text="@string/buysell_cancel_button"
