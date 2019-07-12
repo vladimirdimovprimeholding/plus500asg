@@ -82,8 +82,9 @@
         <!-- leave this for future customizations -->
     </style>
 
-    <style name="BuySellGrayText" parent="DefaultRegularText">
+    <style name="BuySellGreyText" parent="DefaultRegularText">
         <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:layout_marginEnd">@dimen/buysell_side_margins</item>
     </style>
 
     <style name="BuySellPlusMinusButton" parent="DefaultButton">

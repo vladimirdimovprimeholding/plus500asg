@@ -13,7 +13,9 @@ import android.view.ViewGroup
 import com.vlado.plus500asg.list.dummy.DummyContent
 import com.vlado.plus500asg.list.dummy.DummyContent.DummyItem
 import android.support.v7.widget.DividerItemDecoration
+import android.widget.LinearLayout
 import com.vlado.plus500asg.R
+import kotlinx.android.synthetic.main.fragment_item_list.view.*
 
 
 /**
@@ -42,9 +44,10 @@ class ItemFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_item_list, container, false)
 
+        val recyclerView = view.list
+
         // Set the adapter
-        if (view is RecyclerView) {
-            with(view) {
+            with(recyclerView) {
                 layoutManager = when {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
@@ -56,8 +59,7 @@ class ItemFragment : Fragment() {
             }
 
             //add a default separator view
-            view.addItemDecoration(DividerItemDecoration(view.getContext(), DividerItemDecoration.VERTICAL))
-        }
+        recyclerView.addItemDecoration(DividerItemDecoration(view.getContext(), DividerItemDecoration.VERTICAL))
 
         return view
     }

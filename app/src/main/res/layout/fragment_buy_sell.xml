@@ -128,15 +128,21 @@
         <TextView
                 android:text="@string/buysell_by_email"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                style="@style/BuySellGreyText"
+                android:layout_weight="1"/>
         <TextView
                 android:text="@string/buysell_by_sms"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/textView6" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                style="@style/BuySellGreyText"
+                android:layout_weight="1"/>
         <TextView
                 android:text="@string/buysell_push"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                style="@style/BuySellGreyText"
+                android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
             android:orientation="horizontal"

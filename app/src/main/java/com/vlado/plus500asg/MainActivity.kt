@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment
 import com.vlado.plus500asg.buysell.BuySellFragment
 import com.vlado.plus500asg.list.ItemFragment
 import com.vlado.plus500asg.list.dummy.DummyContent
+import kotlinx.android.synthetic.main.content_main.*
 
 
 class MainActivity : AppCompatActivity(), ItemFragment.OnListFragmentInteractionListener {
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity(), ItemFragment.OnListFragmentInteraction
     }
 
     private fun changeFragment(fragment: Fragment){
+        main_menu.visibility = View.GONE
         val manager = supportFragmentManager
         val transaction = manager.beginTransaction()
         transaction.add(frame.id, fragment)
@@ -49,5 +51,10 @@ class MainActivity : AppCompatActivity(), ItemFragment.OnListFragmentInteraction
         while (manager.getBackStackEntryCount() > 0) {
             manager.popBackStackImmediate()
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        main_menu.visibility = View.VISIBLE
     }
 }
