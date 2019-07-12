@@ -15,6 +15,9 @@
     <dimen name="buysell_top_margins">8dp</dimen>
     <dimen name="buysell_bottom_margins">8dp</dimen>
     <dimen name="buysell_side_margins">8dp</dimen>
+    <dimen name="buysell_plus_minus_button_width">45dp</dimen>
+    <dimen name="buysell_plus_minus_button_height">40dp</dimen>
+    <dimen name="buysell_confirm_cancel_button_height">40dp</dimen>
     <!-- List -->
 
 
