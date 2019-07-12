@@ -30,7 +30,7 @@ class MyItemRecyclerViewAdapter(
             val item = v.tag as DummyItem
             // Notify the active callbacks interface (the activity, if the fragment is attached to
             // one) that an item has been selected.
-            mListener?.onListFragmentInteraction(item)
+//            mListener?.onListFragmentInteraction(item)
         }
     }
 
@@ -42,10 +42,24 @@ class MyItemRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
+
+        val res = holder.mView.context.resources
+
         holder.mPairView.text = item.pair
         holder.mFirstDigitsView.text = item.firstDigits
         holder.mSecondDigitsView.text = item.secondDigits
-        holder.mPercentageView.text = item.precentage
+        holder.mPercentageView.text = "%s%s".format(item.precentage, res.getString(R.string.precent))
+
+        if(item.precentage.toDouble() > 0){
+            holder.mPercentageView.setTextColor(res.getColor(R.color.colorGreen, null))
+            holder.mFirstDigitsView.setTextColor(res.getColor(R.color.colorRed, null))
+            holder.mSecondDigitsView.setTextColor(res.getColor(R.color.colorRed, null))
+        } else {
+            holder.mPercentageView.setTextColor(res.getColor(R.color.colorRed, null))
+            holder.mFirstDigitsView.setTextColor(res.getColor(R.color.colorGreen, null))
+            holder.mSecondDigitsView.setTextColor(res.getColor(R.color.colorGreen, null))
+
+        }
 
         with(holder.mView) {
             tag = item

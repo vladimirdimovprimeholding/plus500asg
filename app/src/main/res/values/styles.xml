@@ -113,8 +113,19 @@
     </style>
 
     <!-- List -->
-    <style name="ItemButton" parent="DefaultButton">
+    <style name="ListItemButton" parent="DefaultButton">
         <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="ListPairText" parent="DefaultRegularText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/list_bottom_margins</item>
+    </style>
+
+    <style name="ListDigitsText" parent="DefaultRegularText">
+        <item name="android:layout_marginStart">@dimen/list_side_margins</item>
+        <item name="android:layout_marginBottom">@dimen/list_bottom_margins</item>
+        <!-- leave this for future customizations -->
     </style>
     
 </resources>

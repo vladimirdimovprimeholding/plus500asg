@@ -19,7 +19,10 @@
     <dimen name="buysell_plus_minus_button_height">40dp</dimen>
     <dimen name="buysell_confirm_cancel_button_height">40dp</dimen>
     <dimen name="buysell_edittext_height">40dp</dimen>
-    <!-- List -->
 
+    <!-- List -->
+    <dimen name="list_top_margins">8dp</dimen>
+    <dimen name="list_bottom_margins">8dp</dimen>
+    <dimen name="list_side_margins">8dp</dimen>
 
 </resources>
