@@ -24,6 +24,7 @@ object DummyContent {
     private val COUNT = 25
 
     val somePairs = arrayOf("EUR/GBP", "USD/CAD", "EUR/USD", "BTC/USD(Kraken)", "Gold", "Silver", "CAD/USD")
+
     val someDigits = arrayOf(
         "9084503280",
         "74.53647434",
@@ -40,6 +41,7 @@ object DummyContent {
         "16.0088410",
         "96.2872",
         "28.474040")
+
     val somePrecentages = arrayOf(
         "0.07",
         "-7.77",
@@ -47,11 +49,12 @@ object DummyContent {
         "6.38",
         "-4.9",
         "0.34",
-        "9.91",
+        "-9.91",
         "-2.74",
         "8.89",
         "-3.05"
     )
+
     init {
         // Add some sample items.
         for (i in 1..COUNT) {
